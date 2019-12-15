@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "개발 블로그 시작"
 date:   2015-04-20 08:43:59
 author: Ben Centra
 categories: Jekyll
