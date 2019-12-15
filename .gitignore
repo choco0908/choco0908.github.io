@@ -1,6 +1,13 @@
 .DS_Store
 
 # Compiled site
+/_site/
+_site/
+.sass-cache/
+.jekyll-metadata
+.jekyll
+Gemfile
+Gemfile.lock
 _site
 .jekyll-cache/
 
