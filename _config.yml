@@ -14,9 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-theme: just-the-docs
-
-
 title: 도츠의 AR/VR 개발 블로그
 description: A Jekyll theme for documentation
 baseurl: "" # the subpath of your site, e.g. /blog
