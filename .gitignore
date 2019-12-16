@@ -1,21 +1,6 @@
-
-# Compiled site
-/_site/
-_site/
-.sass-cache/
-.jekyll-metadata
-.jekyll
-Gemfile
-Gemfile.lock
-_site
-.jekyll-cache/
-
-# Sass garbage
-/_site
 *.gem
+.bundle
 .sass-cache
-
-# Bundler
-.bundle/
-vendor/
+_site
 Gemfile.lock
+node_modules
