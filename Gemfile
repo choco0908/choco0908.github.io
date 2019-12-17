@@ -1,1 +1,5 @@
 source "https://rubygems.org"
+gem "jekyll"
+gem "jekyll-seo-tag"
+gem "rake"
+gem "just-the-docs"
