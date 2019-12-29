@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Buttons
-parent: UI Components
+title: Security
+parent: Android
 nav_order: 2
 ---
 
