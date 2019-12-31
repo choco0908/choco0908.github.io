@@ -14,6 +14,9 @@ permalink: /
 
 
 이 블로그는 Github Pages에 just-the-docs 테마를 적용하여 만들었습니다.
+블로그 내 소스코드들은 아래 github에서 확인 하실수 있습니다.
+
+https://gist.github.com/choco0908
 
 ---
 
