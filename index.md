@@ -12,6 +12,9 @@ permalink: /
 
 `starfish0908@naver.com`
 
+
+이 블로그는 Github Pages에 just-the-docs 테마를 적용하여 만들었습니다.
+
 ---
 
 ## About the project
