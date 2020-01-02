@@ -8,5 +8,14 @@ permalink: /docs/ar
 
 # AR 개발하기
 
-To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.
+Aframe 기반의 오픈소스 AR.js를 사용하면 웹브라우저상에서 
+증강현실(AR) 컨텐츠를 개발 할 수 있습니다.
+
+AR.js 프로젝트중 Location Based 컨텐츠가 흥미로워보여
+해당 코드를 활용한 프로젝트를 만들어보았습니다.
+
+<img src='https://raw.githubusercontent.com/jeromeetienne/AR.js/master/AR.js-1920-1080-HD.png'>
+
+[**AR.js github**](https://github.com/jeromeetienne/AR.js/blob/master/README.md)   
+
 {: .fs-6 .fw-300 }
