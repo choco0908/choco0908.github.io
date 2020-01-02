@@ -16,14 +16,24 @@ nav_order: 1
 
 ---
 
-## Basic button styles
+## AR.js - Augmented Reality for the Web 란?
 
-### Links that look like buttons
+### A-Frame 기반의 오픈소스
 
----
+WebBrowser에서 카메라, 위치기반의 컨텐츠를 제작할 수 있도록 만들어진 라이브러리이며
+JavaScript로 만들어졌습니다.
+WebGL과 WebRTC를 지원하여 대부분의 모바일에서도 동작하기 때문에 범용적으로 사용이 가능합니다.
 
-## Using utilities with buttons
+<img src='{{ "/assets/images/ar/arjs/aframe-main.png" | absolute_url }}'>
 
-### Button size
+[a-frame](https://aframe.io/)
 
-### Spacing between buttons
+### Marker Based , Location Based
+
+- Marker Based
+> Marker Based는 Unity , Vuforia , Unreal 등에서 경험한 3D 마커와 동일하게 생각하시면 됩니다. marker 객체에 등록할 pattern/barcord 형태의 마커를 등록해서 사용합니다.
+
+- Location Based
+> [GeoAR.js](https://github.com/nicolocarpignoli/GeoAR.js)이라는 A-Frame 기반의 오픈소스가 AR.js에 통합 되었으며, 경도와 위도를 이용하여 카메라 공간 내에 오브젝트를 생성할 수 있습니다.
+
+***

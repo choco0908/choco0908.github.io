@@ -8,7 +8,7 @@ permalink: /docs/ar
 
 # AR 개발하기
 
-Aframe 기반의 오픈소스 AR.js를 사용하면 웹브라우저상에서 
+A-Frame 기반의 오픈소스 AR.js를 사용하면 웹브라우저상에서 
 증강현실(AR) 컨텐츠를 개발 할 수 있습니다.
 
 AR.js 프로젝트중 Location Based 컨텐츠가 흥미로워보여
