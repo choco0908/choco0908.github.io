@@ -16,14 +16,3 @@ nav_order: 99
 
 ---
 
-## Basic button styles
-
-### Links that look like buttons
-
----
-
-## Using utilities with buttons
-
-### Button size
-
-### Spacing between buttons

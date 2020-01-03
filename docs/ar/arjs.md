@@ -24,6 +24,8 @@ WebBrowser에서 카메라, 위치기반의 컨텐츠를 제작할 수 있도록
 JavaScript로 만들어졌습니다.
 WebGL과 WebRTC를 지원하여 대부분의 모바일에서도 동작하기 때문에 범용적으로 사용이 가능합니다.
 
+WebAR의 장점은 모바일, 웹에서 프로그램 설치없이 권한만 부여하면 바로 사용이 가능하기 때문에 편리합니다.
+
 <img src='{{ "/assets/images/ar/arjs/aframe-main.png" | absolute_url }}'>
 
 [a-frame](https://aframe.io/)
