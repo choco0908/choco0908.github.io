@@ -22,6 +22,12 @@ Github에 자세하게 나와있지만, 간략하게 A-Frame 기반의 오픈소
 
 [DEMO 확인 페이지](https://hg90.asuscomm.com:8888)
 
+- 개발환경
 
+> OS : Windows 10
+
+> Web Server : Node.js , Express
+
+> Test Mobiles : Galaxy Note 10 with Chrome Browser, iPhone 7 with Safari Browser
 
 {: .fs-6 .fw-300 }
