@@ -68,6 +68,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   just-the-docs
+
   rake
 
 BUNDLED WITH
