@@ -20,7 +20,7 @@ Github에 자세하게 나와있지만, 간략하게 A-Frame 기반의 오픈소
 
 위 라이브뷰 프로젝트에 흥미가 생겨 AR.js 프로젝트중 Location Based 라이브러리를 활용하여 데모 프로젝트를 만들어보았습니다.
 
-[DEMO 확인 페이지(코로나맵 AR)](https://corona-ar.asuscomm.com:8888)
+[DEMO 확인 페이지(코로나맵 AR)](http://corona-ar.asuscomm.com)
 
 - 개발환경
 
