@@ -1,7 +1,6 @@
 ---
 layout: default
 title: JavaScript
-date:   2020-01-02 10:33:00 +0900
 nav_order: 2
 has_children: true
 permalink: /docs/javascript

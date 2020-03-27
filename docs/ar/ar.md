@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Augmented Reality
-date:   2020-03-23 22:12:00 +0900
 nav_order: 3
 has_children: true
 permalink: /docs/ar

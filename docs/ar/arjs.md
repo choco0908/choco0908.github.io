@@ -2,7 +2,6 @@
 layout: default
 title: AR.js 활용
 parent: Augmented Reality
-date:   2020-01-03 15:26:00 +0900
 nav_order: 1
 ---
 

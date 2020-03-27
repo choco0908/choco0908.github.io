@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Virtual Reality
-date:   2020-01-05 18:20:00 +0900
 nav_exclude: true
-nav_order: 99
+nav_order: 3
 has_children: true
 permalink: /docs/vr
 ---
