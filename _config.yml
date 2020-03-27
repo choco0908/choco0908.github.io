@@ -17,7 +17,7 @@ remote_theme: pmarsceill/just-the-docs
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 도츠의 무상지식
-description: A Jekyll theme for documentation
+description: "도츠의 블로그"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://choco0908.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
