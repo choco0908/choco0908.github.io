@@ -2,6 +2,7 @@
 layout: default
 title: Troubleshooting
 parent: Augmented Reality
+date:   2020-01-06 17:05:00 +0900
 nav_order: 99
 ---
 

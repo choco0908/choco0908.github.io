@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Android
+date:   2020-02-19 17:45:00 +0900
 nav_order: 6
 has_children: true
 permalink: /docs/android
