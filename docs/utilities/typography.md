@@ -2,6 +2,7 @@
 layout: default
 title: Typography
 parent: Utilities
+date:   2020-01-01 00:00:00 +0900
 nav_order: 4
 ---
 

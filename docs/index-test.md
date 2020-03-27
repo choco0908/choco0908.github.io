@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Markdown kitchen sink
+date:   2020-01-01 00:00:00 +0900
 nav_exclude: true
 nav_order: 99
 ---

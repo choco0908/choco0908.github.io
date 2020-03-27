@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+date:   2020-01-02 00:00:00 +0900
 permalink: /about/
 ---
 

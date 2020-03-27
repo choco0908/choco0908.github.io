@@ -3,6 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 description: "메인 페이지"
+date:   2020-01-02 00:00:00 +0900
 permalink: /
 ---
 

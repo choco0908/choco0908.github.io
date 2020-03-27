@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Navigation Structure
+date:   2020-01-01 00:00:00 +0900
 nav_exclude: true
 nav_order: 98
 ---
