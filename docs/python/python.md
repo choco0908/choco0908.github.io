@@ -2,7 +2,7 @@
 layout: default
 title: Python
 date:   2020-03-08 23:25:00 +0900
-nav_order: 8
+nav_order: 9
 has_children: true
 permalink: /docs/python
 ---
