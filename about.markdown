@@ -9,7 +9,7 @@ permalink: /about/
 
 현재 **Mobile Security Engineer**로 일하고 있으며
 
-모바일 개발자로 전향중..
+프론트엔드 개발자로 전향중..
 
 취미로 **AR / VR** 관련 공부 중
 
