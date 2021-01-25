@@ -7,9 +7,9 @@ permalink: /about/
 
 <img src='{{ "/assets/images/profile.jpeg" | absolute_url }}'>
 
-현재 **Mobile Security Engineer**로 일하고 있으며
+2015.03 - 2020.10   **Web / Mobile Security Engineer / CERT**
 
-프론트엔드 개발자로 전향중..
+2020.11 -           **iOS/macOS Front-End Developer ( Objective-C )**
 
 취미로 **AR / VR** 관련 공부 중
 
