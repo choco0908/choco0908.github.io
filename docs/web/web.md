@@ -2,7 +2,7 @@
 layout: default
 title: Web
 date:   2020-04-17 10:55:00 +0900
-nav_order: 8
+nav_order: 9
 has_children: true
 permalink: /docs/web
 ---

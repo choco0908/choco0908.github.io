@@ -7,8 +7,8 @@ has_children: true
 permalink: /docs/ios
 ---
 
-# iOS 앱 점검 포스팅
+# iOS Development / Security
 
-iOS 앱 점검을 하면서 알게 된 지식들을 공유하는 페이지 입니다.
+iOS 앱 개발/점검을 하면서 알게 된 지식들을 공유하는 페이지 입니다.
 
 {: .fs-6 .fw-300 }
