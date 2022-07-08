@@ -43,6 +43,8 @@ More details here: http://curl.haxx.se/docs/sslcerts.html
 $ /bin/bash -c "$(curl -x {http://user:password@some.proxy.com:port} -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+---
+
 ## Ruby gem Error
 
 Jekyll 블로그, xcpretty 등 Ruby로 만든 패키지를 설치하기 위해 gem이 필요하며 기본적으로 ruby가 설치가 되어있지만
