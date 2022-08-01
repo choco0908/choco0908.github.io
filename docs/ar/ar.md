@@ -19,9 +19,7 @@ Github에 자세하게 나와있지만, 간략하게 A-Frame 기반의 오픈소
 그 와중에 구글신님이 [Google Introducing Live View](https://github.com/nicolocarpignoli/GeoAR.js)을 발표하였습니다.
 <img src='{{ "/assets/images/ar/arjs/google-liveview.gif" | absolute_url }}'>
 
-위 라이브뷰 프로젝트에 흥미가 생겨 AR.js 프로젝트중 Location Based 라이브러리를 활용하여 데모 프로젝트를 만들어보았습니다.
-
-[DEMO 확인 페이지(WayFinding)](https://corona-ar.asuscomm.com:9999)
+<!-- 위 라이브뷰 프로젝트에 흥미가 생겨 AR.js 프로젝트중 Location Based 라이브러리를 활용하여 데모 프로젝트를 만들어보았습니다. -->
 
 - 개발환경
 
