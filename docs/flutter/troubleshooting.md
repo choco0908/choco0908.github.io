@@ -27,23 +27,23 @@ Window/Mac 개발 환경을 맞추기 위해서 윈도우에도 Flutter 환경�
 Exception in thread "main" java.lang.UnsupportedClassVersionError: com/android/prefs/AndroidLocationsProvider has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
 ```
 
-<img src='{{ "/assets/images/flutter/flutter_window_install_error_1" | absolute_url }}'>
+<img src='{{ "/assets/images/flutter/flutter_window_install_error_1.png" | absolute_url }}'>
 
 대부분 Java와 Javac 버전이 안 맞아서 뜨는 에러라고 검색이 되는데
 
 버전이 달라서 생기는 문제는 아니었고, Java 버전이 너무 낮아서 발생하는 문제였습니다.
 
-<img src='{{ "/assets/images/flutter/flutter_window_install_error_3" | absolute_url }}'>
+<img src='{{ "/assets/images/flutter/flutter_window_install_error_3.png" | absolute_url }}'>
 
 [Java 1.9](https://www.oracle.com/java/technologies/downloads/#jdk19-windows)에서 installer를 다운받아 설치하였고
 
-<img src='{{ "/assets/images/flutter/flutter_window_install_error_2" | absolute_url }}'>
+<img src='{{ "/assets/images/flutter/flutter_window_install_error_2.png" | absolute_url }}'>
 
 위와 같이 환경변수에 1.8 버전을 1.9버전으로 교체를 한 후에
 
 다시 **flutter doctor --android-licenses**를 실행해 보았습니다.
 
-<img src='{{ "/assets/images/flutter/flutter_window_install_error_4" | absolute_url }}'>
+<img src='{{ "/assets/images/flutter/flutter_window_install_error_4.png" | absolute_url }}'>
 
 Java 버전 변경 후에 정상적으로 licenses 체크가 완료되었고 doctor로 확인했을때
 
