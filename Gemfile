@@ -1,7 +1,2 @@
 source "https://rubygems.org"
-gem "jekyll"
-gem "jekyll-seo-tag"
-gem "rake"
-gem "just-the-docs"
-gem "jekyll-sitemap"
-gem "webrick", "~> 1.7"
+gemspec
