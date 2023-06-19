@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://choco0908.github.com/"
+      url: "https://github.com/choco0908"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -288,3 +288,5 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc_ads: true
+      toc_sticky: true

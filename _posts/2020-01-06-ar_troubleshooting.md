@@ -40,4 +40,4 @@ Message: WebRTC issue-! navigator.mediaDevices not present in your browser
 
 <img src='{{ "/assets/images/ar/arjs/geoar-troubleshooting-3.png" | absolute_url }}'>
 
-[**도츠의 무상지식 - Node.js HTTPS 적용하기 포스팅 바로가기**](https://choco0908.github.io/docs/javascript/5/)
+[**도츠의 무상지식 - Node.js HTTPS 적용하기 포스팅 바로가기**](https://choco0908.github.io/javascript/javascript5/)

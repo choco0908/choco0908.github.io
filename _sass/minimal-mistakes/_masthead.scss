@@ -24,6 +24,9 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $sans-serif-narrow;
+    /*메뉴 폰트 볼드체 변경*/
+    font-size: $type-size-4;
+    font-weight: bold;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
