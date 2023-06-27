@@ -323,6 +323,7 @@
 
 .wide .sidebar__right {
   margin-bottom: 1em;
+  display: none;
 
   @include breakpoint($large) {
     position: initial;
