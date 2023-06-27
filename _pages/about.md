@@ -1,17 +1,16 @@
 ---
-layout: page
+layout: single
 title: About
 date:   2020-01-02 00:00:00 +0900
 permalink: /about/
 ---
+<p align="center">
+    <img src='{{ "/assets/images/profile.jpeg" | absolute_url }}'>
+</p>
 
-<img src='{{ "/assets/images/profile.jpeg" | absolute_url }}'>
+👍 2015.03 - 2020.10   Web / Mobile Security Engineer / CERT
 
-2015.03 - 2020.10   **Web / Mobile Security Engineer / CERT**
+🚀 2020.11 -           iOS/macOS Front-End Developer ( Objective-C / Swift )
 
-2020.11 -           **iOS/macOS Front-End Developer ( Objective-C )**
-
-취미로 **AR / VR** 관련 공부 중
-
-기억력이 나빠 공부 했던 내용들을 글로 남기기 위해 블로그 운영중
+**게임 좋아하는 개발자의 이것 저것 기록하는 블로그**😀🥳
 
