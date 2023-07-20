@@ -464,6 +464,14 @@
     -ms-transform: translate(0, 10%);
     transform: translate(0, 10%);
   }
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 38px;
+    margin-bottom: 1em;
+  }
 }
 
 @include breakpoint(max-width $large - 1px) {

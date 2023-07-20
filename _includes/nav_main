@@ -1,0 +1,107 @@
+<!--https://ansohxxn.github.io/blog/category/ 참고-->
+
+{% assign sum = site.posts | size %}
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <li>
+        📜 <span>전체 글</style> <span>({{sum}})</style>
+      </li>
+      <li>
+        <span class="nav__sub-title">IT 개발자</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "iOS" %}
+                        <li><a href="/categories/ios" class="">iOS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "macOS" %}
+                        <li><a href="/categories/macos" class="">macOS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Android" %}
+                        <li><a href="/categories/android" class="">Android ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "JavaScript" %}
+                        <li><a href="/categories/js" class="">JavaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Flutter" %}
+                        <li><a href="/categories/flutter" class="">Flutter ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Web" %}
+                        <li><a href="/categories/web" class="">Web ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Augmented Reality" %}
+                        <li><a href="/categories/ar" class="">Augmented Reality ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ETC" %}
+                        <li><a href="/categories/etc" class="">ETC ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">게임</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Path of Exile" %}
+                        <li><a href="/categories/poe" class="">Path of Exile ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">경제</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "House" %}
+                        <li><a href="/categories/house" class="">내집마련 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Daily" %}
+                        <li><a href="/categories/daily" class="">일반 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <br>
+      <li>
+        <a href="https://hits.seeyoufarm.com">
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoco0908.github.io&count_bg=%23070D03&title_bg=%23A8A4A4&icon=notion.svg&icon_color=%232F0808&title=Visitors&edge_flat=false"/>
+        </a>
+      </li>
+    </ul>
+</nav>

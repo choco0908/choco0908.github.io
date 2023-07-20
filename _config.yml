@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "도츠"
   avatar           : /assets/images/author.png
-  bio              : "iOS/macOS FE Developer"
+  bio              : "iOS/macOS FE Developer<br>IT, 게임, 경제 블로그"
   location         : "South Korea"
   email            :
   links:
@@ -291,3 +291,4 @@ defaults:
       show_date: true
       toc_ads: true
       toc_sticky: true
+      sidebar_main: true
