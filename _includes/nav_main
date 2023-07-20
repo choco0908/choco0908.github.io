@@ -9,7 +9,7 @@
         📜 <span>전체 글</style> <span>({{sum}})</style>
       </li>
       <li>
-        <span class="nav__sub-title">IT 개발자</span>
+        <span class="nav__sub-title">프로그래밍</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "iOS" %}
@@ -70,6 +70,14 @@
                 {% for category in site.categories %}
                     {% if category[0] == "ETC" %}
                         <li><a href="/categories/etc" class="">ETC ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">사용 후기</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "IT Device" %}
+                        <li><a href="/categories/device" class="">IT 기기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
