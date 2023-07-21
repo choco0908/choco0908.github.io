@@ -1,7 +1,7 @@
 ---
 title: "Android"
 layout: archive
-permalink: categories/Android
+permalink: categories/android
 author_profile: true
 sidebar_main: true
 ---
