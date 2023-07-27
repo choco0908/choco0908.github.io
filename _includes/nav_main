@@ -33,6 +33,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Hack" %}
+                        <li><a href="/categories/hack" class="">해킹 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "JavaScript" %}
                         <li><a href="/categories/js" class="">JavaScript ({{category[1].size}})</a></li>
                     {% endif %}
