@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">맥모닝 vs 버거킹 모닝메뉴 가격대 비교 인포그래픽</title>
+  <desc id="desc">맥도날드 맥모닝과 버거킹 모닝메뉴의 판매 시간, 대표 메뉴, 가격대를 비교한 인포그래픽</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8ef"/>
+      <stop offset="0.52" stop-color="#f7fbff"/>
+      <stop offset="1" stop-color="#fff2e3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1f2937" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .font { font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; }
+      .title { font-size: 46px; font-weight: 800; fill: #172033; }
+      .subtitle { font-size: 20px; font-weight: 500; fill: #536174; }
+      .card-title { font-size: 28px; font-weight: 800; fill: #172033; }
+      .brand { font-size: 24px; font-weight: 800; fill: #172033; }
+      .label { font-size: 18px; font-weight: 700; fill: #546174; }
+      .value { font-size: 30px; font-weight: 900; fill: #172033; }
+      .small { font-size: 16px; font-weight: 600; fill: #667085; }
+      .price { font-size: 24px; font-weight: 900; fill: #172033; }
+      .note { font-size: 15px; font-weight: 500; fill: #667085; }
+      .white { fill: #fff; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="48" y="38" width="1104" height="599" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+
+  <text x="600" y="92" text-anchor="middle" class="font title">맥모닝 vs 버거킹 모닝메뉴</text>
+  <text x="600" y="126" text-anchor="middle" class="font subtitle">2026년 기준 판매 시간 · 대표 메뉴 · 가격대 비교</text>
+
+  <g transform="translate(88 166)">
+    <rect width="486" height="386" rx="24" fill="#fff7e6" stroke="#f5c64b" stroke-width="3"/>
+
+    <g transform="translate(34 24)">
+      <rect x="0" y="0" width="94" height="94" rx="22" fill="#d71920"/>
+      <path d="M28 72 C30 35 39 18 47 18 C55 18 64 35 66 72" fill="none" stroke="#ffc72c" stroke-width="12" stroke-linecap="round"/>
+      <path d="M46 72 C48 35 57 18 65 18 C73 18 82 35 84 72" fill="none" stroke="#ffc72c" stroke-width="12" stroke-linecap="round"/>
+      <text x="118" y="42" class="font brand">McDonald's</text>
+      <text x="118" y="72" class="font small">맥도날드 맥모닝</text>
+    </g>
+
+    <line x1="34" y1="144" x2="452" y2="144" stroke="#f1d999" stroke-width="2"/>
+
+    <text x="34" y="185" class="font label">판매 시간</text>
+    <text x="34" y="222" class="font value">04:00 ~ 10:30</text>
+    <text x="34" y="249" class="font small">공식 메뉴 상세 기준</text>
+
+    <text x="34" y="300" class="font label">대표 가격</text>
+    <text x="34" y="335" class="font price">맥그리들 단품 4,600~4,900원</text>
+    <text x="34" y="366" class="font price">세트 5,900~6,200원</text>
+  </g>
+
+  <g transform="translate(626 166)">
+    <rect width="486" height="386" rx="24" fill="#fff2e8" stroke="#ef7b45" stroke-width="3"/>
+
+    <g transform="translate(34 24)">
+      <ellipse cx="47" cy="22" rx="47" ry="20" fill="#f5a64a"/>
+      <rect x="9" y="22" width="76" height="48" rx="17" fill="#fff4d7" stroke="#f5a64a" stroke-width="4"/>
+      <ellipse cx="47" cy="70" rx="47" ry="20" fill="#f5a64a"/>
+      <text x="47" y="44" text-anchor="middle" class="font" font-size="18" font-weight="900" fill="#d62300">BURGER</text>
+      <text x="47" y="64" text-anchor="middle" class="font" font-size="18" font-weight="900" fill="#d62300">KING</text>
+      <text x="118" y="42" class="font brand">Burger King</text>
+      <text x="118" y="72" class="font small">버거킹 모닝메뉴</text>
+    </g>
+
+    <line x1="34" y1="144" x2="452" y2="144" stroke="#f3c6ad" stroke-width="2"/>
+
+    <text x="34" y="185" class="font label">판매 시간</text>
+    <text x="34" y="222" class="font value">오픈 ~ 11:00</text>
+    <text x="34" y="249" class="font small">2026년 모닝 개편 보도 기준</text>
+
+    <text x="34" y="300" class="font label">대표 가격</text>
+    <text x="34" y="335" class="font price">크루아상위치 4,300~5,300원</text>
+    <text x="34" y="366" class="font price">랩 메뉴 2,500~2,900원</text>
+  </g>
+
+  <g transform="translate(88 578)">
+    <rect width="1024" height="38" rx="19" fill="#172033"/>
+    <text x="512" y="25" text-anchor="middle" class="font white" font-size="17" font-weight="700">
+      빠른 선택: 10시 30분 전은 맥모닝 · 10시 30분 이후 11시 전은 버거킹 모닝메뉴
+    </text>
+  </g>
+
+  <text x="600" y="648" text-anchor="middle" class="font note">
+    출처: 맥도날드 공식 메뉴 상세, 버거킹 공식 메뉴 페이지, 2026년 언론 보도 기준
+  </text>
+</svg>
