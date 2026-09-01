@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">전일 종가 대비 하락률 계산식</title>
+  <desc id="desc">현재가와 전일 종가를 이용해 등락률을 계산하는 과정을 설명하는 이미지</desc>
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <text x="70" y="100" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#111827">전일 대비 등락률 계산 흐름</text>
+  <text x="72" y="142" font-family="Arial, sans-serif" font-size="22" fill="#475569">현재가를 전일 종가와 비교해서 오늘 움직임을 숫자로 바꿉니다.</text>
+  <g transform="translate(80 210)">
+    <rect x="0" y="0" width="270" height="150" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="28" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">전일 종가</text>
+    <text x="28" y="108" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#2563eb">70,000원</text>
+  </g>
+  <g transform="translate(465 210)">
+    <rect x="0" y="0" width="270" height="150" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="28" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">현재가</text>
+    <text x="28" y="108" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#ef4444">67,900원</text>
+  </g>
+  <path d="M360 285 L445 285" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M445 285 L428 270 M445 285 L428 300" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(830 210)">
+    <rect x="0" y="0" width="290" height="150" rx="18" fill="#fff1f2" stroke="#fecdd3" stroke-width="2"/>
+    <text x="28" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#7f1d1d">전일 대비</text>
+    <text x="28" y="108" font-family="Arial, sans-serif" font-size="46" font-weight="800" fill="#dc2626">-3.00%</text>
+  </g>
+  <path d="M745 285 L810 285" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M810 285 L793 270 M810 285 L793 300" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(150 445)">
+    <rect x="0" y="0" width="900" height="105" rx="18" fill="#111827"/>
+    <text x="48" y="62" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#ffffff">(현재가 - 전일 종가) / 전일 종가 × 100</text>
+  </g>
+  <text x="300" y="610" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">후보 조건 예시: 하락률 ≤ -3%</text>
+</svg>
