@@ -1,6 +1,8 @@
 <!-- start custom head snippets -->
-<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6392784614255185"
-     crossorigin="anonymous"></script>-->
+{% if site.adsense.enabled and site.adsense.client %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.client }}"
+       crossorigin="anonymous"></script>
+{% endif %}
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

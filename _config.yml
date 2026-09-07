@@ -99,6 +99,16 @@ analytics:
     tracking_id          : "G-XL03382JH5"
     anonymize_ip         : # true, false (default)
 
+# Google AdSense placement settings. Publisher and slot IDs are public page
+# identifiers, not credentials. Keep account, API, and payment secrets out of Git.
+adsense:
+  enabled: true
+  client: "ca-pub-6392784614255185"
+  display_slot: "1711308502"
+  inarticle_slot: "1420981111"
+  infeed_slot: "8252666123"
+  multiplex_slot: "4121849420"
+
 
 # Site Author
 author:

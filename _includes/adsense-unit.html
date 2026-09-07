@@ -1,0 +1,14 @@
+{% assign adsense_slot = include.slot | default: "" %}
+{% if site.adsense.enabled and site.adsense.client and adsense_slot != "" %}
+  <div class="adsense adsense--{{ include.kind }}">
+    <ins class="adsbygoogle"
+         style="{{ include.style | default: 'display:block' }}"
+         data-ad-client="{{ site.adsense.client }}"
+         data-ad-slot="{{ adsense_slot }}"
+         data-ad-format="{{ include.format | default: 'auto' }}"
+         {% if include.layout %}data-ad-layout="{{ include.layout }}"{% endif %}
+         {% if include.layout_key %}data-ad-layout-key="{{ include.layout_key }}"{% endif %}
+         {% if include.full_width != false %}data-full-width-responsive="true"{% endif %}></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+{% endif %}

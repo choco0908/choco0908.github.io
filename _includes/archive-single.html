@@ -28,3 +28,9 @@
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
+
+{% if site.adsense.enabled and page.layout == "archive" %}
+  {% if forloop.index == 3 or forloop.index == 7 %}
+    {% include adsense-infeed.html %}
+  {% endif %}
+{% endif %}

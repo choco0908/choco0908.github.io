@@ -45,7 +45,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% include adsense-display-top.html %}
         {{ content }}
+        {% include adsense-display-bottom.html %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
@@ -61,6 +63,8 @@ layout: default
 
       {% include post_pagination.html %}
     </div>
+
+    {% include adsense-multiplex.html %}
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
