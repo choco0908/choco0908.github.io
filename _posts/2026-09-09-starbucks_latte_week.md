@@ -29,7 +29,6 @@ canonical_url: "https://choco0908.github.io/life/starbucks/promotion/starbucks_l
 핵심은 단순합니다. **룰렛은 꽝이 없지만 50% 할인은 랜덤 당첨 혜택**입니다. 한 번 돌린 뒤 쿠폰함을 바로 열고, 당일 안에 대상 음료 한 잔을 주문해야 할인 쿠폰을 놓치지 않습니다.
 
 ![스타벅스 라떼 위크 공식 대표 이미지](/assets/images/life/20260909_starbucks_latte_week_01_cover.png)
-*출처: [스타벅스 코리아 라떼 위크 공식 캠페인](https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3510&menu_cd=)*
 
 ## 한눈에 보는 라떼 위크 일정과 대상
 
@@ -49,7 +48,6 @@ canonical_url: "https://choco0908.github.io/life/starbucks/promotion/starbucks_l
 | 바닐라 라떼, 스타벅스 돌체 라떼, 카페 라떼, 밀크카라멜 라떼, 플랫 화이트, 코르타도 | 블랙 글레이즈드 라떼, 호지 글레이즈드 티 라떼, 얼 그레이 바닐라 티 라떼, 제주 말차 라떼 |
 
 ![라떼 위크 대상 음료와 참여 대상 안내](/assets/images/life/20260909_starbucks_latte_week_02_roulette.png)
-*출처: [스타벅스 코리아 라떼 위크 공식 캠페인](https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3510&menu_cd=)*
 
 ## 룰렛부터 결제까지, 실제 순서
 
@@ -61,7 +59,6 @@ canonical_url: "https://choco0908.github.io/life/starbucks/promotion/starbucks_l
 쿠폰은 다음 날로 넘길 수 없습니다. 오전에 룰렛만 돌려두고 잊기 쉬운 구조라서, 출근길이나 점심 주문 직전에 참여하는 편이 가장 실용적입니다. 이벤트 참여 기회는 매일 새로 갱신되고 시스템 상황에 따라 오전 중 순차 반영될 수 있습니다.
 
 ![라떼 위크 룰렛 참여와 쿠폰 사용 3단계](/assets/images/life/20260909_starbucks_latte_week_03_steps.png)
-*출처: [스타벅스 코리아 라떼 위크 공식 캠페인](https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3510&menu_cd=)*
 
 {% include adsense-inarticle.html %}
 
@@ -78,7 +75,6 @@ canonical_url: "https://choco0908.github.io/life/starbucks/promotion/starbucks_l
 | 별 1개 | 음료 주문 계획이 없는 날에도 적립 혜택으로 받기 |
 
 ![라떼 위크 룰렛 당첨 혜택 5종](/assets/images/life/20260909_starbucks_latte_week_04_rewards.png)
-*출처: [스타벅스 코리아 라떼 위크 공식 캠페인](https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3510&menu_cd=)*
 
 ## 놓치기 쉬운 유의사항
 
@@ -93,7 +89,6 @@ canonical_url: "https://choco0908.github.io/life/starbucks/promotion/starbucks_l
 - 쿠폰의 적용 대상은 스타벅스 정책에 따라 바뀔 수 있으므로, 주문 전 쿠폰 유의사항을 한 번 확인하세요.
 
 ![스타벅스 라떼 위크 쿠폰 유의사항](/assets/images/life/20260909_starbucks_latte_week_05_terms.png)
-*출처: [스타벅스 코리아 라떼 위크 공식 캠페인](https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=3510&menu_cd=)*
 
 ## 결론: 매일 한 번, 주문하는 날에 바로 쓰기
 
