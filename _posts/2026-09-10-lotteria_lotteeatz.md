@@ -29,7 +29,6 @@ canonical_url: "https://choco0908.github.io/life/fastfood/promotion/lotteria_lot
 이번 쿠폰은 배달용이 아닙니다. **매장 방문 또는 픽업 주문만 가능**하고, 쿠폰별로 기간 중 1인 1회 다운로드·사용할 수 있습니다. 주문 가능한 시간도 **10시부터 22시까지**로 정해져 있으니, 쿠폰만 받고 주문을 미루기보다 픽업할 날에 함께 받는 편이 편합니다.
 
 ![롯데잇츠 9월 롯데리아 쿠폰 목록 화면](/assets/images/life/20260910_lotteria_lotteeatz_01_coupon_list.png)
-*이미지: 사용자 제공 롯데잇츠 9월 쿠폰 목록 화면*
 
 ## 먼저 확인할 사용 조건
 
@@ -100,4 +99,3 @@ canonical_url: "https://choco0908.github.io/life/fastfood/promotion/lotteria_lot
 ## 참고 자료 및 출처
 
 - [롯데잇츠 9월 롯데리아 이달의 쿠폰 공식 이벤트](https://www.lotteeatz.com/event/main/selectEvent/18098)
-- 사용자 제공 이미지: 롯데잇츠 9월 쿠폰 목록 화면
