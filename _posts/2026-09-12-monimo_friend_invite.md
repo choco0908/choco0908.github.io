@@ -28,6 +28,9 @@ canonical_url: "https://choco0908.github.io/life/finance/promotion/monimo_friend
 
 > 아래 링크에는 제 초대 코드가 포함되어 있습니다. 이 링크로 가입해 조건을 충족하면 초대한 사람과 초대받은 사람 모두 스페셜젤리를 받을 수 있습니다.
 
+> **[초대코드 : N6HBB8O]**  
+> 모니모 회원가입 후 초대코드를 입력하면, 모니머니로 교환할 수 있는 스페셜젤리를 드려요.
+
 ![모니모 친구 초대 공식 행사 배너](/assets/images/life/20260912_monimo_friend_invite_01_official_banner.png)
 
 ## 9월 모니모 친구 초대 이벤트 한눈에 보기
