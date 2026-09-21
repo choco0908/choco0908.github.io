@@ -27,10 +27,8 @@ canonical_url: "https://choco0908.github.io/life/promotion/mcdonalds_gdragon_goo
 
 한국맥도날드가 지드래곤이 설립한 패션 브랜드 **피스마이너스원(PEACEMINUSONE)** 과 협업한 한정 굿즈 3종을 공개했습니다. 판매 시작일은 **2026년 9월 28일(월)**, 판매처는 전국 맥도날드 매장 카운터입니다.
 
-구매하려면 캠페인 메뉴인 고추장 버터 소스 버거 세트 1종을 먼저 구매해야 합니다. 이후 굿즈 3종 중 한 가지를 골라 추가 구매할 수 있고, **1인당 굿즈 1개**로 수량이 제한됩니다. 기사와 공개 게시물에 없는 가격·온라인 판매·예약 판매 정보는 이 글에 넣지 않았습니다.
+구매하려면 캠페인 메뉴인 고추장 버터 소스 버거 세트 1종을 먼저 구매해야 합니다. 이후 굿즈 3종 중 한 가지를 골라 추가 구매할 수 있고, **1인당 굿즈 1개**로 수량이 제한됩니다.
 
-![맥도날드 x 피스마이너스원 굿즈 원본 이미지](/assets/images/life/02_mcdonalds_gdragon_instagram_original.jpg)
-*이미지 출처: [인스타그램 @jiyongchy818 원본 게시물](https://www.instagram.com/p/DdbuKpymjMj/)*
 
 ## 출시 일정과 구매 조건
 
@@ -50,7 +48,7 @@ canonical_url: "https://choco0908.github.io/life/promotion/mcdonalds_gdragon_goo
 
 기사에서 확인되는 핵심은 `1980년대 유니폼 캡 복각`이라는 점입니다. 실제 색상, 소재, 사이즈, 판매 가격처럼 별도로 공지되지 않은 사양은 매장 구매 전 확인이 필요합니다.
 
-![맥도날드 x 피스마이너스원 빈티지 캡 원본 이미지](/assets/images/life/03_mcdonalds_gdragon_instagram_original.jpg)
+![맥도날드 x 피스마이너스원 빈티지 캡 원본 이미지(/assets/images/life/04_mcdonalds_gdragon_instagram_original.jpg)
 *이미지 출처: [인스타그램 @jiyongchy818 원본 게시물](https://www.instagram.com/p/DdbuKpymjMj/)*
 
 {% include adsense-inarticle.html %}
@@ -60,6 +58,9 @@ canonical_url: "https://choco0908.github.io/life/promotion/mcdonalds_gdragon_goo
 숄더백은 맥도날드의 골든 아치와 피스마이너스원 로고를 함께 사용한 협업 상품입니다. 기사에서는 넉넉한 수납력과 가벼운 무게를 특징으로 소개했습니다.
 
 판매 조건은 캡·핀세트와 같습니다. 고추장 버터 소스 버거 세트 구매 뒤 3종 가운데 한 가지만 선택할 수 있으므로, 현장에서 캡과 숄더백을 동시에 사는 방식은 이번 발표 기준의 1인 1개 제한과 맞지 않습니다.
+
+![맥도날드 x 피스마이너스원 굿즈 원본 이미지]](/assets/images/life/03_mcdonalds_gdragon_instagram_original.jpg)
+*이미지 출처: [인스타그램 @jiyongchy818 원본 게시물](https://www.instagram.com/p/DdbuKpymjMj/)*
 
 ## 3. 맥도날드 핀세트
 
@@ -71,7 +72,7 @@ canonical_url: "https://choco0908.github.io/life/promotion/mcdonalds_gdragon_goo
 | 데이지 꽃 핀 | 한쪽 잎이 빠진 데이지 꽃의 중심에 햄버거 참깨 빵 요소를 표현 |
 | 후렌치 후라이 핀 | 감자튀김 패키지에 피스마이너스원 레드 시그니처 라인을 적용 |
 
-![맥도날드 x 피스마이너스원 굿즈 원본 이미지](/assets/images/life/04_mcdonalds_gdragon_instagram_original.jpg)
+![맥도날드 x 피스마이너스원 굿즈 원본 이미지](/assets/images/life/02_mcdonalds_gdragon_instagram_original.jpg)
 *이미지 출처: [인스타그램 @jiyongchy818 원본 게시물](https://www.instagram.com/p/DdbuKpymjMj/)*
 
 ## 헷갈리지 않게 정리: 메뉴 출시일과 굿즈 판매일
