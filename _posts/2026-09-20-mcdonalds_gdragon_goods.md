@@ -48,7 +48,7 @@ canonical_url: "https://choco0908.github.io/life/promotion/mcdonalds_gdragon_goo
 
 기사에서 확인되는 핵심은 `1980년대 유니폼 캡 복각`이라는 점입니다. 실제 색상, 소재, 사이즈, 판매 가격처럼 별도로 공지되지 않은 사양은 매장 구매 전 확인이 필요합니다.
 
-![맥도날드 x 피스마이너스원 빈티지 캡 원본 이미지(/assets/images/life/04_mcdonalds_gdragon_instagram_original.jpg)
+![맥도날드 x 피스마이너스원 빈티지 캡 원본 이미지](/assets/images/life/04_mcdonalds_gdragon_instagram_original.jpg)
 *이미지 출처: [인스타그램 @jiyongchy818 원본 게시물](https://www.instagram.com/p/DdbuKpymjMj/)*
 
 {% include adsense-inarticle.html %}
@@ -59,7 +59,7 @@ canonical_url: "https://choco0908.github.io/life/promotion/mcdonalds_gdragon_goo
 
 판매 조건은 캡·핀세트와 같습니다. 고추장 버터 소스 버거 세트 구매 뒤 3종 가운데 한 가지만 선택할 수 있으므로, 현장에서 캡과 숄더백을 동시에 사는 방식은 이번 발표 기준의 1인 1개 제한과 맞지 않습니다.
 
-![맥도날드 x 피스마이너스원 굿즈 원본 이미지]](/assets/images/life/03_mcdonalds_gdragon_instagram_original.jpg)
+![맥도날드 x 피스마이너스원 굿즈 원본 이미지](/assets/images/life/03_mcdonalds_gdragon_instagram_original.jpg)
 *이미지 출처: [인스타그램 @jiyongchy818 원본 게시물](https://www.instagram.com/p/DdbuKpymjMj/)*
 
 ## 3. 맥도날드 핀세트
