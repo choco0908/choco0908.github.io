@@ -6,3 +6,57 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Reusable call-to-action included by life-information posts that link to Franchi.
+.franchi-cta {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid #ffb46a;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff8ef, #fff1df);
+}
+
+.franchi-cta__eyebrow {
+  margin: 0 0 .35rem;
+  color: #b64700;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.franchi-cta__copy {
+  margin: 0 0 .85rem;
+  color: #1b2b48;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.franchi-cta__link {
+  display: inline-block;
+  padding: .7rem 1rem;
+  border-radius: 999px;
+  background: #f2550a;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.franchi-cta__link:hover,
+.franchi-cta__link:focus-visible {
+  background: #c84200;
+  color: #fff !important;
+}
+
+@media (max-width: 37.5em) {
+  .franchi-cta {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .franchi-cta__link {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+}
