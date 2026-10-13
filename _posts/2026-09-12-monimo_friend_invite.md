@@ -1,5 +1,5 @@
 ---
-title: "모니모 친구 초대: 9월 신규 가입 스페셜젤리 받는 방법과 젤리투자 5만원 기록"
+title: "모니모 친구 초대: 10월 신규 가입 스페셜젤리 받는 방법과 젤리투자 5만원 기록"
 classes: wide
 toc: true
 toc_sticky: true
@@ -18,13 +18,13 @@ tags:
   - 앱테크
   - 삼성금융
   - 친구초대이벤트
-  - 9월이벤트
-description: "모니모를 처음 시작할 예정이라면, 가입 화면을 열기 전에 친구 초대 링크부터 확인하는 편이 좋습니다. 2026년 9월 친구 초대 행사에서는 친구 초대 후 처음 가입한 회원이 초대 코드를 입력하면 스페셜젤리..."
+  - 10월이벤트
+description: "모니모를 처음 시작할 예정이라면, 가입 화면을 열기 전에 친구 초대 링크부터 확인하는 편이 좋습니다. 2026년 10월 친구 초대 행사에서는 친구 초대 후 처음 가입한 회원이 초대 코드를 입력하면 스페셜젤리..."
 date: 2026-09-12 00:00:00 +0900
 last_modified_at: 2026-09-12T09:00:00+09:00
 canonical_url: "https://choco0908.github.io/life/finance/promotion/monimo_friend_invite/"
 ---
-모니모를 처음 시작할 예정이라면, 가입 화면을 열기 전에 친구 초대 링크부터 확인하는 편이 좋습니다. 2026년 9월 친구 초대 행사에서는 **친구 초대 후 처음 가입한 회원**이 초대 코드를 입력하면 스페셜젤리 1개를 받을 수 있습니다. 이미 가입을 마친 뒤에는 대상에서 제외되므로 순서가 중요해요.
+모니모를 처음 시작할 예정이라면, 가입 화면을 열기 전에 친구 초대 링크부터 확인하는 편이 좋습니다. 2026년 10월 친구 초대 행사에서는 **친구 초대 후 처음 가입한 회원**이 초대 코드를 입력하면 스페셜젤리 1개를 받을 수 있습니다. 이미 가입을 마친 뒤에는 대상에서 제외되므로 순서가 중요해요.
 
 > 아래 링크에는 제 초대 코드가 포함되어 있습니다. 이 링크로 가입해 조건을 충족하면 초대한 사람과 초대받은 사람 모두 스페셜젤리를 받을 수 있습니다.
 
@@ -33,11 +33,11 @@ canonical_url: "https://choco0908.github.io/life/finance/promotion/monimo_friend
 
 ![모니모 친구 초대 공식 행사 배너](/assets/images/life/20260912_monimo_friend_invite_01_official_banner.png)
 
-## 9월 모니모 친구 초대 이벤트 한눈에 보기
+## 10월 모니모 친구 초대 이벤트 한눈에 보기
 
 | 항목 | 내용 |
 | :--- | :--- |
-| 행사 기간 | 2026년 9월 1일~9월 30일 |
+| 행사 기간 | 2026년 10월 1일~10월 31일 |
 | 대상 | 친구 초대 이전에 모니모에 가입하지 않은 최초 가입 회원 |
 | 혜택 | 스페셜젤리 1개 |
 | 지급 대상 | 초대한 친구와 초대받은 친구 모두 |
@@ -50,7 +50,7 @@ canonical_url: "https://choco0908.github.io/life/finance/promotion/monimo_friend
 
 모니모를 아직 설치하지 않았다면 아래 순서로 진행하면 됩니다.
 
-1. [모니모 친구 초대 링크 열기](https://m.monimo.com/monimo/homepage/friend/PGIFPMCHomepageFriendInviteBridge001?mnmExcnCmpActiId=MM26072220_002_0001&frndInvtCd=N6HBB8O&invateDate=20260912&isAllJunior=false)
+1. [모니모 친구 초대 링크 열기](https://m.monimo.com/monimo/homepage/friend/PGIFPMCHomepageFriendInviteBridge001?mnmExcnCmpActiId=MM26072220_002_0001&frndInvtCd=N6HBB8O&invateDate=20261013&isAllJunior=false)
 2. `가입하고 젤리 받기` 버튼을 누릅니다.
 3. 모니모 앱을 설치하고 회원가입을 진행합니다.
 4. 초대 코드 입력란이 나오면 친구에게 받은 코드를 입력합니다.
@@ -62,7 +62,7 @@ canonical_url: "https://choco0908.github.io/life/finance/promotion/monimo_friend
 
 ## 받은 스페셜젤리는 언제까지 써야 하나요?
 
-스페셜젤리는 젤리 상점에서 모니머니로 교환할 수 있고, 교환 금액은 랜덤입니다. 다만 교환하지 않은 젤리는 **적립한 달의 말일 23:59에 소멸**합니다. 9월에 받은 젤리라면 9월 말 전에 젤리 상점에서 확인하는 편이 안전합니다.
+스페셜젤리는 젤리 상점에서 모니머니로 교환할 수 있고, 교환 금액은 랜덤입니다. 다만 교환하지 않은 젤리는 **적립한 달의 말일 23:59에 소멸**합니다. 10월에 받은 젤리라면 10월 말 전에 젤리 상점에서 확인하는 편이 안전합니다.
 
 모니모통장이 있다면 충전 또는 혜택으로 받은 모니머니 잔액은 적립 당일 모니모통장으로 자동 입금됩니다. 실시간 입금이 아니라 하루 1회 처리되는 방식입니다. 원하면 자동 입금 전에도 직접 입금할 수 있습니다.
 
@@ -95,5 +95,5 @@ canonical_url: "https://choco0908.github.io/life/finance/promotion/monimo_friend
 
 ## 참고 자료 및 출처
 
-- [모니모 친구 초대 공식 이벤트 안내 및 초대 링크](https://m.monimo.com/monimo/homepage/friend/PGIFPMCHomepageFriendInviteBridge001?mnmExcnCmpActiId=MM26072220_002_0001&frndInvtCd=N6HBB8O&invateDate=20260912&isAllJunior=false)
+- [모니모 친구 초대 공식 이벤트 안내 및 초대 링크](https://m.monimo.com/monimo/homepage/friend/PGIFPMCHomepageFriendInviteBridge001?mnmExcnCmpActiId=MM26072220_002_0001&frndInvtCd=N6HBB8O&invateDate=20261013&isAllJunior=false)
 - [모니모 젤리투자 기록](https://choco0908.tistory.com/50)
