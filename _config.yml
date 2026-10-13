@@ -93,11 +93,14 @@ social:
 
 # Analytics
 analytics:
-  provider               : google-gtag 
+  provider               : goatcounter
   # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-XL03382JH5"
     anonymize_ip         : # true, false (default)
+  goatcounter:
+    endpoint             : "https://choco0908.goatcounter.com/count"
+    public_counter       : true
 
 # Google AdSense placement settings. Publisher and slot IDs are public page
 # identifiers, not credentials. Keep account, API, and payment secrets out of Git.

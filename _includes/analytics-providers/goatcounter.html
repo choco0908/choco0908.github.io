@@ -1,0 +1,7 @@
+{% if site.analytics.goatcounter.endpoint %}
+<script data-goatcounter="{{ site.analytics.goatcounter.endpoint | escape }}"
+        async src="https://gc.zgo.at/count.js"></script>
+{% if site.analytics.goatcounter.public_counter %}
+<script defer src="{{ '/assets/js/goatcounter-views.js' | relative_url }}"></script>
+{% endif %}
+{% endif %}

@@ -29,3 +29,9 @@
     {% endif %}
   </p>
 {% endif %}
+{% if jekyll.environment == 'production' and site.analytics.provider == 'goatcounter' and site.analytics.goatcounter.public_counter and page.analytics != false and page.id and document.url == page.url %}
+  <p class="page__meta" data-goatcounter-views hidden>
+    <i class="far fa-eye" aria-hidden="true"></i>
+    방문 <span data-goatcounter-count></span>회
+  </p>
+{% endif %}
