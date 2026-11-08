@@ -27,6 +27,7 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | escape_once }}</h1>{% endif %}
+          {% if page.show_description and page.description %}<p class="page__lead">{{ page.description | escape_once }}</p>{% endif %}
           {% include page__meta.html %}
         </header>
       {% endunless %}

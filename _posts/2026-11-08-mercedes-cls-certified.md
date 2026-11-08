@@ -1,13 +1,14 @@
 ---
 title: "벤츠 인증중고차 CLS 구매 후기, 협상·프로모션과 최종 비용"
-date: 2026-11-07T00:00:00+09:00
+date: 2026-11-08T21:09:00+09:00
 description: "차량대금·관리비·취득세 등 등록비 합계는 54,082,340원, 약 5,408만 원이었어요."
 canonical_url: "https://choco0908.github.io/life/mercedes-cls-certified/"
 classes: wide
 toc: false
-show_date: false
+show_date: true
+show_description: true
 read_time: false
-hide_date: true
+hide_date: false
 published: true
 permalink: /life/mercedes-cls-certified/
 categories:
