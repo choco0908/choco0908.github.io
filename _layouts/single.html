@@ -46,7 +46,17 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {{ content }}
+        {% if page.url == "/life/air-fryer-parchment-preheat/" and content contains '<h2 id="' %}
+          {% assign related_inline = site.posts | where: "url", "/life/microwave-takeout-container/" | first %}
+          {% if related_inline %}
+            {% capture inline_box %}<aside class="post-discovery-inline" aria-label="함께 읽기"><a href="{{ related_inline.url | relative_url }}" data-goatcounter-click="post-inline-related-open" data-goatcounter-title="본문 함께 읽기 클릭">함께 읽기 · {{ related_inline.title | strip_html | escape_once }}</a></aside><h2 id="{% endcapture %}
+            {{ content | replace_first: '<h2 id="', inline_box }}
+          {% else %}
+            {{ content }}
+          {% endif %}
+        {% else %}
+          {{ content }}
+        {% endif %}
         {% include adsense-display-bottom.html %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
@@ -61,7 +71,7 @@ layout: default
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+      {% if page.id %}{% include post-related-cards.html %}{% endif %}
     </div>
 
     {% include adsense-multiplex.html %}
@@ -71,28 +81,4 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
-          {% if post.id == page.id %}
-            {% continue %}
-          {% endif %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
 </div>

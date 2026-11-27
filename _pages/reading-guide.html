@@ -1,0 +1,24 @@
+---
+title: 주제별 글 모음
+layout: archive
+permalink: /reading-guide/
+author_profile: true
+sidebar_main: true
+---
+
+<div lang="ko">
+  {% for collection in site.data.home_collections %}
+    <section aria-labelledby="{{ collection.id }}">
+      <h2 id="{{ collection.id }}">{{ collection.title | escape }}</h2>
+      <ul>
+        {% for url in collection.posts %}
+          {% assign item = site.posts | where: 'url', url | first %}
+          {% if item %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title | strip_html | escape_once }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <p><a href="{{ collection.archive | relative_url }}">이 주제의 전체 글 보기</a></p>
+    </section>
+  {% endfor %}
+</div>

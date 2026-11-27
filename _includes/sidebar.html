@@ -17,6 +17,15 @@
   {% endif %}
 
   {% if page.sidebar_main %}
+    {% if page.layout == "home" and page.url == "/" %}
+      <nav class="home-sidebar-guides" aria-label="주제별 글 모음">
+        <ul>
+          {% for collection in site.data.home_collections %}
+            <li><a href="{{ '/reading-guide/' | relative_url }}#{{ collection.id }}" data-goatcounter-click="home-guide-open" data-goatcounter-title="홈 주제별 글 모음 클릭">{{ collection.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
     {% include nav_main %}
   {% endif %}
   </div>

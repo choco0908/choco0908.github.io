@@ -26,11 +26,13 @@ layout: default
       <header class="home-discovery__hero">
         <div>
           <h1>도츠의 무상지식</h1>
-          <p>생활 속 궁금증부터 미국주식, 개발, 게임까지.</p>
+          <p>미국주식 실적과 ETF 비용을 비교하고, 식품 보관과 가전 사용법을 찾아보세요.</p>
         </div>
         <div class="home-discovery__actions">
-          {% if home_features %}
-            <a class="home-discovery__browse" href="#featured-posts" data-goatcounter-click="home-feature-jump" data-goatcounter-title="홈 추천 글 영역 이동">{{ home_features_title }} 보기</a>
+          {% assign lead_url = "/stock/qqq-qqqm-costs-20261127/" %}
+          {% assign lead_post = site.posts | where: 'url', lead_url | first %}
+          {% if lead_post %}
+            <a class="home-discovery__browse" href="{{ lead_post.url | relative_url }}" data-goatcounter-click="home-hero-post-open" data-goatcounter-title="홈 대표 글 클릭">QQQ·QQQM 비용 비교 읽기</a>
           {% endif %}
           {% if site.search %}
             <button class="home-discovery__search search__toggle" type="button" data-goatcounter-click="home-search-open" data-goatcounter-title="홈 글 검색 열기">
@@ -58,10 +60,7 @@ layout: default
                 {% assign feature_image = feature.image | default: featured_post.header.teaser | default: featured_post.header.image %}
                 {% assign feature_title = feature.title | default: featured_post.title %}
                 {% assign feature_topic = feature.topic | default: featured_post.categories.first %}
-                {% case feature_topic %}
-                  {% when "Life" %}{% assign feature_topic = "생활정보" %}
-                  {% when "Stock" %}{% assign feature_topic = "미국주식" %}
-                {% endcase %}
+
                 <li>
                   <a class="home-feature" href="{{ featured_post.url | relative_url }}" data-goatcounter-click="home-feature-open" data-goatcounter-title="홈 추천 글 카드 클릭">
                     <span class="home-feature__image{% if feature.image_fit == 'contain' %} home-feature__image--contain{% endif %}">
@@ -72,8 +71,9 @@ layout: default
                       {% endif %}
                     </span>
                     <span class="home-feature__text">
-                      {% if feature_topic %}<span class="home-feature__topic">{{ feature_topic | escape }}</span>{% endif %}
+                      {% if feature_topic %}<span class="home-feature__topic">{% include home-topic-name.html category=feature_topic %}</span>{% endif %}
                       <span class="home-feature__title">{{ feature_title | strip_html | escape_once }}</span>
+                      <span class="home-feature__read" aria-hidden="true">글 읽기</span>
                     </span>
                   </a>
                 </li>
@@ -97,13 +97,30 @@ layout: default
         {% for post in posts %}
           <li>
             <a href="{% if post.link %}{{ post.link | escape }}{% else %}{{ post.url | relative_url }}{% endif %}" {% if paginator.page == nil or paginator.page == 1 %}data-goatcounter-click="home-recent-open" data-goatcounter-title="홈 최신 글 클릭"{% endif %}>
-              <span>{{ post.title | strip_html | escape_once }}</span>
-              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+              {% assign recent_image = post.header.teaser | default: post.header.image %}
+              {% if recent_image %}
+                <img class="home-recent__thumb" src="{{ recent_image | relative_url | escape }}" alt="" width="104" height="72" decoding="async" loading="lazy">
+              {% endif %}
+              <span class="home-recent__body">
+                <span class="home-recent__meta">
+                  {% if post.categories.first %}<span class="home-recent__topic">{% include home-topic-name.html category=post.categories.first %}</span>{% endif %}
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+                </span>
+                <span class="home-recent__title">{{ post.title | strip_html | escape_once }}</span>
+                {% assign recent_excerpt = post.description | default: post.excerpt | markdownify | strip_html | normalize_whitespace | strip %}
+                {% if recent_excerpt != "" %}<span class="home-recent__excerpt">{{ recent_excerpt | truncate: 130 | escape_once }}</span>{% endif %}
+              </span>
             </a>
           </li>
         {% endfor %}
       </ul>
       {% include paginator.html %}
     </section>
+    {% if paginator.page == nil or paginator.page == 1 %}
+      <nav class="home-discovery__more" aria-label="더 찾아보기">
+        <a href="{{ '/reading-guide/' | relative_url }}" data-goatcounter-click="home-guide-open" data-goatcounter-title="홈 주제별 글 모음 클릭">주제별 글 모음 보기</a>
+        <a href="{{ '/feed.xml' | relative_url }}" data-goatcounter-click="home-rss-open" data-goatcounter-title="홈 RSS 구독 클릭">새 글 RSS로 구독</a>
+      </nav>
+    {% endif %}
   </main>
 </div>

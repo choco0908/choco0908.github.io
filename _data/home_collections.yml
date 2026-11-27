@@ -1,0 +1,17 @@
+- id: stock
+  title: 미국주식 분석 모아보기
+  archive: /categories/stock
+  posts:
+    - /stock/qqq-qqqm-costs-20261127/
+    - /stock/workday-earnings-20261126/
+    - /stock/semicap-comparison-20261125/
+    - /stock/arm/
+- id: life
+  title: 생활 가이드 모아보기
+  archive: /categories/life
+  posts:
+    - /life/hard-boiled-egg-storage/
+    - /life/air-fryer-parchment-preheat/
+    - /life/humidifier-water-change/
+    - /life/cooked-rice-cooling/
+    - /life/microwave-takeout-container/

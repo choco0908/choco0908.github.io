@@ -1,0 +1,5 @@
+{%- case include.category -%}
+  {%- when "Life" -%}생활정보
+  {%- when "Stock" -%}미국주식
+  {%- else -%}{{ include.category | escape }}
+{%- endcase -%}

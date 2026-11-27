@@ -1,0 +1,37 @@
+{% assign related_category = page.categories.first %}
+{% assign category_posts = site.categories[related_category] | where_exp: "item", "item.url != page.url" %}
+{% assign matching_posts = "" | split: "" %}
+{% for tag in page.tags limit: 8 %}
+  {% unless tag == related_category or tag == "생활정보" or tag == "미국주식" %}
+    {% assign tagged_posts = category_posts | where_exp: "item", "item.tags contains tag" %}
+    {% assign matching_posts = matching_posts | concat: tagged_posts | uniq %}
+  {% endunless %}
+  {% if matching_posts.size >= 3 %}{% break %}{% endif %}
+{% endfor %}
+{% assign related_posts = matching_posts | concat: category_posts | uniq | slice: 0, 3 %}
+{% if page.related and related_posts.size > 0 %}
+  <section class="post-discovery" aria-labelledby="related-articles" lang="ko">
+    <h2 id="related-articles">같은 주제의 글 더 읽기</h2>
+    <ul class="post-discovery__cards">
+      {% for related in related_posts limit: 3 %}
+        {% assign related_image = related.header.teaser | default: related.header.image %}
+        <li>
+          <a class="home-feature" href="{{ related.url | relative_url }}" data-goatcounter-click="post-related-open" data-goatcounter-title="글 하단 관련 글 카드 클릭">
+            <span class="home-feature__image">
+              {% if related_image %}
+                <img src="{{ related_image | relative_url | escape }}" alt="" loading="lazy" decoding="async">
+              {% else %}
+                <i class="far fa-file-alt" aria-hidden="true"></i>
+              {% endif %}
+            </span>
+            <span class="home-feature__text">
+              <span class="home-feature__title">{{ related.title | strip_html | escape_once }}</span>
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% else %}
+  {% include post_pagination.html %}
+{% endif %}
