@@ -135,12 +135,6 @@
                 {% endfor %}
             </ul>
       </li>
-      <br>
-      <li>
-        <a href="https://hits.seeyoufarm.com">
-            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoco0908.github.io&count_bg=%23070D03&title_bg=%23A8A4A4&icon=notion.svg&icon_color=%232F0808&title=Visitors&edge_flat=false"/>
-        </a>
-      </li>
     </ul>
 </nav>
 
