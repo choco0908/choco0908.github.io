@@ -8,13 +8,21 @@ layout: default
   </aside>
   <main class="home-discovery">
     {% if paginator.page == nil or paginator.page == 1 %}
+      {% assign lead_post = nil %}
       {% assign ranked_features = "" | split: "" %}
       {% for feature in site.data.home_popular.posts limit: 4 %}
         {% assign featured_post = site.posts | where: 'url', feature.post | first %}
         {% if featured_post %}
           {% assign ranked_features = ranked_features | push: feature %}
+          {% unless lead_post %}
+            {% assign lead_post = featured_post %}
+          {% endunless %}
         {% endif %}
       {% endfor %}
+
+      {% assign lead_post = lead_post | default: site.posts.first %}
+      {% assign lead_feature = site.data.home_features | where: 'post', lead_post.url | first %}
+      {% assign lead_title = lead_feature.title | default: lead_post.title %}
 
       {% assign home_features = site.data.home_features %}
       {% assign home_features_title = "추천 글" %}
@@ -29,10 +37,10 @@ layout: default
           <p>미국주식 실적과 ETF 비용을 비교하고, 식품 보관과 가전 사용법을 찾아보세요.</p>
         </div>
         <div class="home-discovery__actions">
-          {% assign lead_url = "/stock/qqq-qqqm-costs-20261127/" %}
-          {% assign lead_post = site.posts | where: 'url', lead_url | first %}
           {% if lead_post %}
-            <a class="home-discovery__browse" href="{{ lead_post.url | relative_url }}" data-goatcounter-click="home-hero-post-open" data-goatcounter-title="홈 대표 글 클릭">QQQ·QQQM 비용 비교 읽기</a>
+            <a class="home-discovery__browse" href="{{ lead_post.url | relative_url }}" data-goatcounter-click="home-hero-post-open" data-goatcounter-title="홈 대표 글 클릭">
+              <span>{{ lead_title | strip_html | escape_once }} 읽기</span>
+            </a>
           {% endif %}
           {% if site.search %}
             <button class="home-discovery__search search__toggle" type="button" data-goatcounter-click="home-search-open" data-goatcounter-title="홈 글 검색 열기">
