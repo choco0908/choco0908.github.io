@@ -1,5 +1,5 @@
 <!-- start custom head snippets -->
-{% if site.adsense.enabled and site.adsense.client %}
+{% if site.adsense.enabled and site.adsense.client and page.url != "/" %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.client }}"
        crossorigin="anonymous"></script>
 {% endif %}

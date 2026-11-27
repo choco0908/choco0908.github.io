@@ -8,26 +8,6 @@ layout: default
   </aside>
   <main class="home-discovery">
     {% if paginator.page == nil or paginator.page == 1 %}
-      <header class="home-discovery__hero">
-        <div>
-          <h1>도츠의 무상지식</h1>
-          <p>생활 속 궁금증부터 미국주식, 개발, 게임까지.</p>
-        </div>
-        {% if site.search %}
-          <button class="home-discovery__search search__toggle" type="button">
-            <i class="fas fa-search" aria-hidden="true"></i> 글 검색
-          </button>
-        {% endif %}
-      </header>
-
-      <nav class="home-discovery__topics" aria-label="주제별 글">
-        <a href="{{ '/categories/life' | relative_url }}">생활정보</a>
-        <a href="{{ '/categories/stock' | relative_url }}">미국주식</a>
-        <a href="{{ '/categories/python' | relative_url }}">Python</a>
-        <a href="{{ '/categories/poe' | relative_url }}">Path of Exile</a>
-        <a href="{{ '/categories/' | relative_url }}">전체 주제</a>
-      </nav>
-
       {% assign ranked_features = "" | split: "" %}
       {% for feature in site.data.home_popular.posts limit: 4 %}
         {% assign featured_post = site.posts | where: 'url', feature.post | first %}
@@ -43,9 +23,34 @@ layout: default
         {% assign home_features_title = "최근 30일 인기 글" %}
       {% endif %}
 
+      <header class="home-discovery__hero">
+        <div>
+          <h1>도츠의 무상지식</h1>
+          <p>생활 속 궁금증부터 미국주식, 개발, 게임까지.</p>
+        </div>
+        <div class="home-discovery__actions">
+          {% if home_features %}
+            <a class="home-discovery__browse" href="#featured-posts" data-goatcounter-click="home-feature-jump" data-goatcounter-title="홈 추천 글 영역 이동">{{ home_features_title }} 보기</a>
+          {% endif %}
+          {% if site.search %}
+            <button class="home-discovery__search search__toggle" type="button" data-goatcounter-click="home-search-open" data-goatcounter-title="홈 글 검색 열기">
+              <i class="fas fa-search" aria-hidden="true"></i> 글 검색
+            </button>
+          {% endif %}
+        </div>
+      </header>
+
+      <nav class="home-discovery__topics" aria-label="주제별 글">
+        <a href="{{ '/categories/life' | relative_url }}" data-goatcounter-click="home-topic-open" data-goatcounter-title="홈 주제 바로가기 클릭">생활정보</a>
+        <a href="{{ '/categories/stock' | relative_url }}" data-goatcounter-click="home-topic-open" data-goatcounter-title="홈 주제 바로가기 클릭">미국주식</a>
+        <a href="{{ '/categories/python' | relative_url }}" data-goatcounter-click="home-topic-open" data-goatcounter-title="홈 주제 바로가기 클릭">Python</a>
+        <a href="{{ '/categories/poe' | relative_url }}" data-goatcounter-click="home-topic-open" data-goatcounter-title="홈 주제 바로가기 클릭">Path of Exile</a>
+        <a href="{{ '/categories/' | relative_url }}" data-goatcounter-click="home-topic-open" data-goatcounter-title="홈 주제 바로가기 클릭">전체 주제</a>
+      </nav>
+
       {% if home_features %}
         <section class="home-discovery__section" aria-labelledby="featured-posts">
-          <h2 id="featured-posts">{{ home_features_title }}</h2>
+          <h2 id="featured-posts" tabindex="-1">{{ home_features_title }}</h2>
           <ul class="home-discovery__features">
             {% for feature in home_features %}
               {% assign featured_post = site.posts | where: 'url', feature.post | first %}
@@ -58,7 +63,7 @@ layout: default
                   {% when "Stock" %}{% assign feature_topic = "미국주식" %}
                 {% endcase %}
                 <li>
-                  <a class="home-feature" href="{{ featured_post.url | relative_url }}">
+                  <a class="home-feature" href="{{ featured_post.url | relative_url }}" data-goatcounter-click="home-feature-open" data-goatcounter-title="홈 추천 글 카드 클릭">
                     <span class="home-feature__image{% if feature.image_fit == 'contain' %} home-feature__image--contain{% endif %}">
                       {% if feature_image %}
                         <img src="{{ feature_image | relative_url | escape }}" alt="" decoding="async">
@@ -91,12 +96,10 @@ layout: default
       <ul class="home-discovery__recent">
         {% for post in posts %}
           <li>
-            {% if post.link %}
-              <a href="{{ post.link }}">{{ post.title | strip_html | escape_once }}</a>
-            {% else %}
-              <a href="{{ post.url | relative_url }}">{{ post.title | strip_html | escape_once }}</a>
-            {% endif %}
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+            <a href="{% if post.link %}{{ post.link | escape }}{% else %}{{ post.url | relative_url }}{% endif %}" {% if paginator.page == nil or paginator.page == 1 %}data-goatcounter-click="home-recent-open" data-goatcounter-title="홈 최신 글 클릭"{% endif %}>
+              <span>{{ post.title | strip_html | escape_once }}</span>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+            </a>
           </li>
         {% endfor %}
       </ul>
