@@ -1,0 +1,21 @@
+# Paths refer to published posts. Card titles can be shorter than the full titles.
+- post: /life/humidifier-water-change/
+  title: 가습기 물 교체와 물통 관리
+  topic: 가전 관리
+  image: /assets/images/home/humidifier.jpg
+
+- post: /life/hard-boiled-egg-storage/
+  title: 삶은 달걀 보관 기간
+  topic: 식품 보관
+  image: /assets/images/home/boiled-eggs.jpg
+
+- post: /life/air-fryer-parchment-preheat/
+  title: 에어프라이어 종이호일 사용법
+  topic: 주방 가전
+  image: /assets/images/home/air-fryer.jpg
+
+- post: /stock/qqq-qqqm-costs-20261127/
+  title: QQQ와 QQQM 비용 비교
+  topic: 미국주식
+  image: /assets/images/stock/20261127_QQQ_01.png
+  image_fit: contain

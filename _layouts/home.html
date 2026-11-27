@@ -1,22 +1,80 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+<div id="main" class="home-shell" lang="ko">
+  <aside class="home-shell__sidebar" aria-label="블로그 탐색">
+    {% include sidebar.html %}
+  </aside>
+  <main class="home-discovery">
+    {% if paginator.page == nil or paginator.page == 1 %}
+      <header class="home-discovery__hero">
+        <div>
+          <h1>도츠의 무상지식</h1>
+          <p>생활 속 궁금증부터 미국주식, 개발, 게임까지.</p>
+        </div>
+        {% if site.search %}
+          <button class="home-discovery__search search__toggle" type="button">
+            <i class="fas fa-search" aria-hidden="true"></i> 글 검색
+          </button>
+        {% endif %}
+      </header>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+      <nav class="home-discovery__topics" aria-label="주제별 글">
+        <a href="{{ '/categories/life' | relative_url }}">생활정보</a>
+        <a href="{{ '/categories/stock' | relative_url }}">미국주식</a>
+        <a href="{{ '/categories/python' | relative_url }}">Python</a>
+        <a href="{{ '/categories/poe' | relative_url }}">Path of Exile</a>
+        <a href="{{ '/categories/' | relative_url }}">전체 주제</a>
+      </nav>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+      {% if site.data.home_features %}
+        <section class="home-discovery__section" aria-labelledby="featured-posts">
+          <h2 id="featured-posts">추천 글</h2>
+          <ul class="home-discovery__features">
+            {% for feature in site.data.home_features %}
+              {% assign featured_post = site.posts | where: 'url', feature.post | first %}
+              {% if featured_post %}
+                <li>
+                  <a class="home-feature" href="{{ featured_post.url | relative_url }}">
+                    <span class="home-feature__image{% if feature.image_fit == 'contain' %} home-feature__image--contain{% endif %}">
+                      <img src="{{ feature.image | relative_url }}" alt="" decoding="async">
+                    </span>
+                    <span class="home-feature__text">
+                      <span class="home-feature__topic">{{ feature.topic | escape }}</span>
+                      <span class="home-feature__title">{{ feature.title | default: featured_post.title | escape }}</span>
+                    </span>
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+    {% endif %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+    {{ content }}
+
+    <section class="home-discovery__section" aria-labelledby="recent-posts">
+      {% if paginator.page == nil or paginator.page == 1 %}
+        <h2 id="recent-posts">최신 글</h2>
+      {% else %}
+        <h1 id="recent-posts">글 목록 <span>· {{ paginator.page }}페이지</span></h1>
+      {% endif %}
+      {% assign posts = paginator.posts | default: site.posts %}
+      <ul class="home-discovery__recent">
+        {% for post in posts %}
+          <li>
+            {% if post.link %}
+              <a href="{{ post.link }}">{{ post.title | strip_html | escape_once }}</a>
+            {% else %}
+              <a href="{{ post.url | relative_url }}">{{ post.title | strip_html | escape_once }}</a>
+            {% endif %}
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+          </li>
+        {% endfor %}
+      </ul>
+      {% include paginator.html %}
+    </section>
+  </main>
 </div>
-
-{% include paginator.html %}
