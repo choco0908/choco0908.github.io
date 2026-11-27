@@ -197,7 +197,8 @@
   }
 
   &__image {
-    display: block;
+    display: grid;
+    place-items: center;
     overflow: hidden;
     aspect-ratio: 8 / 5;
     background: var(--home-soft);
@@ -207,6 +208,11 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    i {
+      color: var(--home-muted);
+      font-size: 2rem;
     }
 
     &--contain img {

@@ -1,0 +1,61 @@
+name: Refresh popular homepage posts
+
+on:
+  schedule:
+    - cron: '23 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-home-popular-posts
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check GoatCounter configuration
+        id: config
+        shell: bash
+        env:
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: |
+          if [[ -n "$GOATCOUNTER_API_TOKEN" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Configure GOATCOUNTER_API_TOKEN to enable popular posts."
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.config.outputs.configured == 'true'
+        with:
+          ref: master
+
+      - uses: ruby/setup-ruby@v1
+        if: steps.config.outputs.configured == 'true'
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Refresh the recent 30-day ranking
+        if: steps.config.outputs.configured == 'true'
+        env:
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: bundle exec ruby _scripts/refresh-home-popular.rb
+
+      - name: Save the ranking and request a Pages build
+        if: steps.config.outputs.configured == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add _data/home_popular.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh popular homepage posts'
+            git pull --rebase origin master
+            git push origin HEAD:master
+          fi
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

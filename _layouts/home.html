@@ -28,21 +28,47 @@ layout: default
         <a href="{{ '/categories/' | relative_url }}">전체 주제</a>
       </nav>
 
-      {% if site.data.home_features %}
+      {% assign ranked_features = "" | split: "" %}
+      {% for feature in site.data.home_popular.posts limit: 4 %}
+        {% assign featured_post = site.posts | where: 'url', feature.post | first %}
+        {% if featured_post %}
+          {% assign ranked_features = ranked_features | push: feature %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign home_features = site.data.home_features %}
+      {% assign home_features_title = "추천 글" %}
+      {% if ranked_features.size > 0 %}
+        {% assign home_features = ranked_features %}
+        {% assign home_features_title = "최근 30일 인기 글" %}
+      {% endif %}
+
+      {% if home_features %}
         <section class="home-discovery__section" aria-labelledby="featured-posts">
-          <h2 id="featured-posts">추천 글</h2>
+          <h2 id="featured-posts">{{ home_features_title }}</h2>
           <ul class="home-discovery__features">
-            {% for feature in site.data.home_features %}
+            {% for feature in home_features %}
               {% assign featured_post = site.posts | where: 'url', feature.post | first %}
               {% if featured_post %}
+                {% assign feature_image = feature.image | default: featured_post.header.teaser | default: featured_post.header.image %}
+                {% assign feature_title = feature.title | default: featured_post.title %}
+                {% assign feature_topic = feature.topic | default: featured_post.categories.first %}
+                {% case feature_topic %}
+                  {% when "Life" %}{% assign feature_topic = "생활정보" %}
+                  {% when "Stock" %}{% assign feature_topic = "미국주식" %}
+                {% endcase %}
                 <li>
                   <a class="home-feature" href="{{ featured_post.url | relative_url }}">
                     <span class="home-feature__image{% if feature.image_fit == 'contain' %} home-feature__image--contain{% endif %}">
-                      <img src="{{ feature.image | relative_url }}" alt="" decoding="async">
+                      {% if feature_image %}
+                        <img src="{{ feature_image | relative_url | escape }}" alt="" decoding="async">
+                      {% else %}
+                        <i class="far fa-file-alt" aria-hidden="true"></i>
+                      {% endif %}
                     </span>
                     <span class="home-feature__text">
-                      <span class="home-feature__topic">{{ feature.topic | escape }}</span>
-                      <span class="home-feature__title">{{ feature.title | default: featured_post.title | escape }}</span>
+                      {% if feature_topic %}<span class="home-feature__topic">{{ feature_topic | escape }}</span>{% endif %}
+                      <span class="home-feature__title">{{ feature_title | strip_html | escape_once }}</span>
                     </span>
                   </a>
                 </li>
